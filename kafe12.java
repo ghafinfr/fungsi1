@@ -1,10 +1,16 @@
 
 public class kafe12 {
     public static void main(String[] args) {
-        Menu();
+        Menu("andi", true);
     }
 
-    public static void Menu() {
+    public static void Menu(String namaPelanggan, boolean isMember) {
+
+        System.out.println("selamat datang " + namaPelanggan + " !");
+
+        if (isMember) {
+            System.out.println("anda adalah member, dapatkan diskon 10% untuk setiap pembeliN!");
+        }
         System.out.println("====MENU RESTO KAFE===");
         System.out.println("1. KOPI HITAM - RP 15,000");
         System.out.println("2. CAPPUCINO - RP 20,000");
